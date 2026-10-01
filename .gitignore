@@ -1,0 +1,47 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.sublime-*
+.phpstorm.meta.php
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies / tooling
+/vendor/
+node_modules/
+.phpunit.result.cache
+.php-cs-fixer.cache
+
+# Env / logs
+.env
+.env.*
+*.log
+
+# CS-Cart: local config & runtime data
+/config.local.php
+/var/cache/
+/var/compiled/
+/var/database/
+/var/backups/
+/var/files/
+/var/exim/
+/var/statistics/
+/var/tmp/
+/var/upgrade/
+/var/restore/
+/var/skins_repository/
+/var/themes_repository/*/var/
+/var/langs/*/*.po.bak
+
+# CS-Cart: generated / uploaded
+/images/
+/design/
+/install/
+/.htaccess
+/.htpasswd
+*.lock
+*.pid
