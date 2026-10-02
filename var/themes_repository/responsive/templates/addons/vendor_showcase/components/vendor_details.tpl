@@ -1,9 +1,9 @@
 <div class="vendor-details">
-  <div class="vendor-details__avatar">
+  <div class="vendor-avatar vendor-avatar--lg">
     {if $card.logo}
-      <img class="vendor-details__img" src="{$card.logo.src|escape}" alt="">
+      <img class="vendor-avatar__img" src="{$card.logo.src|escape}" alt="">
     {else}
-      <span class="vendor-details__initials" aria-hidden="true">{$card.initials|escape}</span>
+      <span aria-hidden="true">{$card.initials|escape}</span>
     {/if}
   </div>
 

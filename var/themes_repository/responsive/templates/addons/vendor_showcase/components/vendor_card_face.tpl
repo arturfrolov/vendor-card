@@ -1,15 +1,15 @@
 <span class="vendor-face">
-  <span class="vendor-face__avatar">
+  <span class="vendor-avatar">
       {if $card.logo}
         <img
-                class="vendor-face__img"
+                class="vendor-avatar__img"
                 src="{$card.logo.src|escape}"
                 alt=""
                 width="40"
                 height="40"
         >
       {else}
-        <span class="vendor-face__initials" aria-hidden="true">{$card.initials|escape}</span>
+        <span aria-hidden="true">{$card.initials|escape}</span>
       {/if}
   </span>
   <span class="vendor-face__name">{$card.name|escape}</span>
