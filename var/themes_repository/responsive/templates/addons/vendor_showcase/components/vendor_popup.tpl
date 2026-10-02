@@ -1,21 +1,10 @@
-<div class="vendor-showcase-starter ds" data-panel-mode="{$panel_mode|escape}">
-  <div class="vendor-showcase-starter__avatar">
-      {if $vendor_card.logo}
-        <img
-                src="{$vendor_card.logo.src|escape}"
-                alt="{$vendor_card.name|escape}"
-                width="40"
-                height="40"
-        >
-      {else}
-        <span aria-hidden="true">{$vendor_card.initials|escape}</span>
-      {/if}
-  </div>
+{$panel_id = "vendor_popup_`$card.company_id`"}
+<div class="vendor-popup js--vendor-popup">
+  <button type="button" class="vendor-popup__trigger js--vendor-popup__trigger" aria-expanded="false" aria-controls="{$panel_id}">
+      {include file="addons/vendor_showcase/components/vendor_card_face.tpl" card=$card}
+  </button>
 
-  <div class="vendor-showcase-starter__body">
-    <a href="{$vendor_card.url|escape}">{$vendor_card.name|escape}</a>
-    <div class="vendor-showcase-starter__debug">
-        {__("vendor_showcase.current_mode")}: {$panel_mode|escape}
-    </div>
+  <div class="vendor-popup__panel js--vendor-popup__panel" id="{$panel_id}" hidden>
+      {include file="addons/vendor_showcase/components/vendor_details.tpl" card=$card}
   </div>
 </div>
