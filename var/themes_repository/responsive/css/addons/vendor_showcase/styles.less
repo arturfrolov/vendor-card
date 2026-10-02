@@ -84,26 +84,27 @@
     }
 }
 
+// Clickable card by popup and modal
+.vendor-trigger {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+
+    &:hover .vendor-face,
+    &:focus-visible .vendor-face {
+        border-color: rgba(7, 131, 149, .5);
+    }
+}
+
 // Popup
 .vendor-popup {
     position: relative;
     display: inline-block;
     max-width: 100%;
-
-    &__trigger {
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        background: none;
-        font: inherit;
-        cursor: pointer;
-
-        &:hover .vendor-face,
-        &:focus-visible .vendor-face {
-            border-color: rgba(7, 131, 149, .5);
-        }
-    }
 
     &__panel {
         position: absolute;
@@ -114,6 +115,57 @@
         max-width: calc(~"100vw - 32px");
         border-radius: 16px;
         box-shadow: 0 12px 32px rgba(0, 0, 0, .4);
+    }
+}
+
+// Modal
+.vendor-modal.ui-dialog {
+    max-width: calc(~"100vw - 32px");
+    border-radius: 16px;
+    background: none;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, .4);
+
+    .ui-dialog-content {
+        min-height: 0 !important;
+        background: none;
+    }
+
+    .object-container {
+        padding: 0;
+        background: none;
+    }
+
+    .vendor-details {
+        width: 960px;
+        max-width: 100%;
+    }
+
+    .ui-dialog-titlebar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        padding: 0;
+        border: 0;
+        background: none;
+    }
+
+    .ui-dialog-titlebar-close {
+        top: 20px;
+        right: 20px;
+    }
+
+    .ui-dialog-title {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+    }
+
+    .ui-icon-closethick {
+        color: @vendor-muted;
     }
 }
 

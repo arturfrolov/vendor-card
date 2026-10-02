@@ -1,6 +1,6 @@
 (() => {
   const POPUP = '.js--vendor-popup';
-  const TRIGGER = '.js--vendor-popup__trigger';
+  const TRIGGER = '.js--vendor-trigger';
   const PANEL = '.js--vendor-popup__panel';
   const EDGE_GAP = 16;
 
@@ -53,6 +53,20 @@
 
     if (opened) {
       fit(opened.querySelector(PANEL));
+    }
+  });
+
+  // Modal mode uses the CS-Cart dialog.
+  // Closing by a click on the backdrop is added here, only for our dialog.
+  document.addEventListener('click', ({ target }) => {
+    if (!target.classList.contains('ui-widget-overlay')) {
+      return;
+    }
+
+    const dialog = Tygh.$.ceDialog('get_last');
+
+    if (dialog.closest('.vendor-modal').length) {
+      dialog.ceDialog('close');
     }
   });
 })();
