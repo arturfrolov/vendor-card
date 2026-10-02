@@ -17,6 +17,22 @@
 | Modal | встроенный диалог CS-Cart (`cm-dialog-opener`) |
 | Popup | собственный JS, без встроенных механизмов и библиотек |
 
+## Скриншоты
+
+**Popup, desktop:** панель привязана к карточке, страница остаётся доступной.
+
+![Popup, desktop](https://github.com/user-attachments/assets/70bb2130-cbe9-438f-813e-030b5563c557)
+
+**Modal, desktop:** диалог CS-Cart с затемнением фона.
+
+![Modal, desktop](https://github.com/user-attachments/assets/5532be3a-96c7-4826-990e-437c60110807)
+
+**Mobile (375px):** контент перестраивается в колонку, без горизонтального скролла.
+
+| Popup | Modal |
+|---|---|
+| <img src="https://github.com/user-attachments/assets/5df423ff-be54-48d7-aefa-f976e8b90559" alt="Popup, mobile" width="300"> | <img src="https://github.com/user-attachments/assets/03e66205-af21-4fd3-aba9-3f98ebabe45a" alt="Modal, mobile" width="300"> |
+
 ## Структура
 
 ```
