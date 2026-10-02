@@ -28,7 +28,3 @@ msgstr "Popup"
 msgctxt "Languages::vendor_showcase.panel_mode.modal"
 msgid "Modal"
 msgstr "Modal"
-
-msgctxt "Languages::vendor_showcase.current_mode"
-msgid "Current mode"
-msgstr "Current mode"

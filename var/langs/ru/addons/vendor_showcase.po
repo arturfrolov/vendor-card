@@ -28,7 +28,3 @@ msgstr "Попап"
 msgctxt "Languages::vendor_showcase.panel_mode.modal"
 msgid "Modal"
 msgstr "Модальное окно"
-
-msgctxt "Languages::vendor_showcase.current_mode"
-msgid "Current mode"
-msgstr "Текущий режим"

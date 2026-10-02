@@ -10,7 +10,7 @@
   <div class="vendor-details__content">
     <div class="vendor-details__info">
       <div class="vendor-details__title">
-        <div class="vendor-details__name">{$card.name|escape}</div>
+        <a class="vendor-details__name" href="{$card.url|escape}">{$card.name|escape}</a>
         <span class="vendor-details__badge vendor-details__badge--pro"><span aria-hidden="true">👑</span> Pro</span>
         <span class="vendor-details__badge vendor-details__badge--kyc"><span aria-hidden="true">🪪</span> Verified (KYC)</span>
       </div>
